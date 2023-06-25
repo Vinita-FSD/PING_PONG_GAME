@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: black; */
+    font-family: sans-serif;
+  }
+  body {
+    width: 100%;
+    height: 100vh;
+  }
+  
+  #main {
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+  
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #innerdiv {
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    border: 4px solid white;
+    /* display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+       */
+    position: relative;
+  }
+  #rod1 {
+    height: 20px;
+  
+    width: 200px;
+    background-color: blueviolet;
+    text-align: center;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #ball {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: red;
+  }
+  #rod2 {
+    height: 20px;
+    width: 200px;
+    background-color: blue;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+  }
+  
+  @media (max-width: 700px) {
+    #rod1,
+    #rod2 {
+      height: 20px;
+      width: 100px;
+    }
+  }
